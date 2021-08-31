@@ -1,6 +1,6 @@
 {
   "name": "webpack-builder-demo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "构建基础包配置及冒烟测试和单元测试",
   "main": "index.js",
   "scripts": {
