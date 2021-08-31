@@ -10,10 +10,11 @@ cache:
 node_js: stable
 
 install:
-  - npm install -D
+  - npm install -D #安装构建器依赖
   - cd ./test/smoke/template
-  - npm install -D
+  - npm install -D #安装模板项目依赖
   - cd ../../../
 
 script:
   - npm test
+  - npm coverage

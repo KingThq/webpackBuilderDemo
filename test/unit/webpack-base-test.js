@@ -5,6 +5,6 @@ describe('webpack.base.js test case', () => {
 
   it('entry', () => {
     // 断言
-    assert.equal(baseConfig.entry.search.indexOf('test/smoke/template/src/search/index.js'), true);
+    assert.equal(baseConfig.entry.search.indexOf('/test/smoke/template/src/search/index.js'), true);
   });
 });
