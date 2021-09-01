@@ -1,6 +1,6 @@
 {
   "name": "webpack-builder-demo",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "travis ci 构建包测试",
   "main": "index.js",
   "scripts": {
