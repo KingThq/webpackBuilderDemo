@@ -1,12 +1,13 @@
 {
   "name": "webpack-builder-demo",
   "version": "1.0.1",
-  "description": "构建基础包配置及冒烟测试和单元测试",
+  "description": "travis ci 构建包测试",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/_mocha",
     "coverage": "nyc npm run test",
-    "eslint": "eslint ./lib --fix"
+    "eslint": "eslint ./lib --fix",
+    "postinstall": "npx commitizen init cz-conventional-changelog --save-dev --save-exact"
   },
   "keywords": [],
   "author": "",
@@ -35,11 +36,19 @@
   "devDependencies": {
     "assert": "^2.0.0",
     "babel-eslint": "^10.1.0",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.24.2",
     "glob-all": "^3.2.1",
+    "husky": "^7.0.2",
     "mocha": "^9.1.1",
     "rimraf": "^3.0.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
